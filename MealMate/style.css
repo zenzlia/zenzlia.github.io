@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+	font-family: BebasNeue;
+	src: url('fonts/BebasNeue-Regular.eot');
+	src: url('fonts/BebasNeue-Regular.woff') format('woff'),
+		 url('fonts/BebasNeue-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-family:'BebasNeue';
+}
+  
+body.home {
+	background-color: #ECECEC;
+}
+
+body.shopping {
+	background-color: #70A6FF;
+}
+
+table, tr{
+	text-align: center;
+}
+
+thead{
+	border-bottom: 1px solid black;
+}
+
+.mealBubble{
+	margin: auto;
+	text-align: right;
+	width:295px;
+	height: 141px;
+	border-radius: 50px;
+	background-color: #70A6FF;
+}
+
+#title {
+	color:#70A6FF;
+	text-align: center;
+	font-size: 15vw;
+	font-weight: 100;
+	
+}
+
+#blank {
+	visibility: hidden;
+}
+
+#date {
+	font-weight: lighter;
+	font-size: 5vw;
+}
+
+.left img{
+	border-bottom-left-radius: 30px 40px;
+}
+
+.right img{
+	border-bottom-right-radius: 30px 40px;
+}
+
+#goals {
+	font-size: 5vw;
+	color: white;
+	background-color: black;
+	margin-right:20vw;
+	margin-left:20vw;
+	margin-top: 2%;
+	text-align: center;
+}
+
+#todaysMeals {
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 1vh;
+	color: white;
+	text-align: center;
+	text-transform: capitalize; 
+}
+
+#todaysMeals img {
+	text-align: center;
+}
+
+#newsfeedBanner {
+	margin: auto;
+	width:100%;
+	margin-bottom: 10%;
+}
+
+#navbar {
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	top:90%;
+	overflow: hidden;
+	background-color: white;
+	position: fixed;
+	width: 100%;
+}
+
+#navbar img{
+	padding: 0% 5% 5%;
+	float: left;
+	padding: 14px 16px;
+	margin: auto;
+	height: 20%;
+	width: 15%;
+}
+
+#home{
+	opacity: 0.75;
+}
+
+#shoppingList{
+	opacity: 0.25;
+}
+
+#timeline{
+	opacity: 0.25;
+}
+
+.addButton {
+	display:block;
+    width:30px;
+    height:30px;
+    border-radius: 100%;
+    color:#FF9D76;
+    text-decoration:none;
+    background: #ffffff;
+    box-shadow: 0 0 1px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.item .likeButton{
+	position:absolute;
+	margin-top: 25%;
+	right:15%;
+}
+
+.item:last-of-type {
+	margin-bottom:100px;
+}
+
+.item{
+	margin-bottom: 5%;
+}
+
+.bubbleInfo {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.addButton {
+	height: 8vw;
+	width: 8vw;
+}
+
+.mealBubble {
+	margin:auto;
+	margin-top:10%;
+	margin-bottom:10%;
+}
+
+.mealBubble:last-of-type {
+	margin-bottom:20%;
+}
+
+/*
+ONBOARD SCREEEEN
+*/
+
+#choices {
+	color:white;
+	text-align: left;
+	font-family: "Montserrat";
+	font-size: 5vw;
+	margin-bottom: 20px;
+}
+
+#choices input{
+	height:20px;
+	width: 20px;
+}
+
+#question {
+	font-family: "Montserrat";
+	margin:10px;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 75%;
+	height: 50px;
+	border-radius: 50px;   
+	background: white;
+	outline: none;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+  
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%; 
+	background: #FF9D76;
+	cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #FF9D76;
+	cursor: pointer;
+}
+
+.info {
+	color: white;
+	font-family: "Montserrat";
+	font-size: 5vw;
+	text-align: center;
+	margin:5px;
+}
+
+.info:last-of-type {
+	font-size: 8vw;
+	text-align: left;
+	margin-top:20px;
+}
+
+#welcome {
+	margin-top:20px;
+	font-weight: lighter;
+	color: white;
+	font-size: 20vw;
+}
+
+#onBoard {
+	color:white;
+}
+
+#proceedButton {
+	background-color: #FF9D76;
+	margin:5vw;
+	width:80%;
+	height: 5%;
+	border-radius: 30px;
+	font-size: 20px;
+	padding:0 20px 0 20px;
+	color:white;
+	margin:auto;
+	margin-bottom: 50px;
+}
+/*
+Bootstrap alterations
+*/
+
+/*
+git add --all
+git commit -m "Initial commit"
+git push -u origin master
+*/

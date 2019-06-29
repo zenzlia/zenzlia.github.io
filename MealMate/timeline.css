@@ -1,0 +1,175 @@
+#home{
+	opacity: 0.25;
+}
+
+#shoppingList{
+	opacity: 0.25;
+}
+
+#timeline{
+	opacity: 0.75;
+} 
+
+#mealGenerator {
+	background-color: #70A6FF;
+	margin:2vw;
+	width:80%;
+	border-radius: 30px;
+	font-size: 20px;
+	padding:0 20px 0 20px;
+	color:white;
+	margin:auto;
+}
+
+.meal td img{
+	margin:none;
+	padding:none;
+}
+
+.mealBubble {
+	height: 120px;
+	width: 331px;
+	margin:none;
+}
+
+.addButton {
+	display:block;
+    width:40px;
+    height:40px;
+    border-radius: 100%;
+    color:#FF9D76;
+    text-decoration:none;
+    background: #ffffff;
+    font-size:20px;
+	font-weight:bold;
+	float:right;
+	margin-right:20px;
+}
+
+tr,td{
+	width:100px;
+}
+
+#blank {
+	visibility: hidden;
+	width:188px
+}
+
+.bubbleDay{
+    font-size: 5vw;
+    margin-top: 5vh;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left img{
+	border-bottom-left-radius: 30px 40px;
+}
+
+.right img{
+	border-bottom-right-radius: 30px 40px;
+}
+
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+}
+
+#searchTitle {
+    color:white;
+    width:100%;
+    text-align: center;
+    font-size: 13vw;
+    margin:auto;
+    margin-top:20px;
+    margin-right:50px;
+    background-color: #70A6FF;
+}
+
+.exitButton {
+    display:block;
+    position:absolute;
+    top:3.75%;
+    left:4%;
+    width:45px;
+    height:45px;
+    border-radius: 100%;
+    color:white;
+    background: #70A6FF;
+    font-size:30px;
+    padding-bottom: 1%;
+    border: 1px solid white;
+}
+
+#mealSearchBar {
+    margin-top:5%;
+    height:6%;
+    border:none;
+    font-size: 6vw;
+    background-color: #ECECEC;
+    color:black;
+    border-bottom: 1px solid black;
+}
+
+.categoryBox {
+    width:100%;
+    margin:auto;
+    height:75px;
+    background-image: url(/images/banner.png);
+}
+
+.category {
+    color:white;
+    font-size: 10vw;
+    margin-top:20px;
+    padding-top:10px;
+}
+
+#categoryBanner {
+    width:100%;
+}
+ 
+.addIngredientButton {
+    width:50px;
+    height:40px;
+    border-radius: 100%;
+    color:white;
+    background: #FF9D76;
+    font-size:30px;
+    padding-top: 4%;
+    margin-top:22px;
+}
+
+.itemName {
+    border-radius:5px;
+    border: 2px solid #FF9D76;
+    border-left:none;
+    font-family: "Montserrat";
+    width:100%;
+    margin-top:-38px;
+    margin-left:2%;
+    font-size: 5vw;
+    text-align:center;
+} 
+
+#mealSelect table {
+    /* border: 2px solid black; */
+    margin:auto;
+}
+
+#mealSelect td {
+    /* border: 2px solid blue; */
+    margin-right:20vw;
+}
+
+#mealSelect td img{
+    margin-right:2.5vw;
+    margin-left:2.5vw;
+    height:120px;
+}
+
+#mealSelect table:last-of-type {
+    margin-bottom: 50px;
+}

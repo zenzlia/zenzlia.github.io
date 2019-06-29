@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8" />
+        <title>Meal Mate</title>
+        
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="6plus.css"/>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/onboard.js"></script>
+        <meta meta name="viewport" content="width=device-width" /> 
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+    </head>
+
+    <body class="shopping" id="onBoard">
+        <h1 id="welcome">welcome to meal mate</h1>
+
+        <p class="info">
+            Tell us about yourself:
+        </p>
+
+        <p class="info">
+            What are your dietary requirements?
+        </p>
+
+        <div id="container">
+            <div id="choices">
+                <div> <input type="checkbox" class="veganCheckbox" name="vegan" for="me"> vegan</div>
+                <div> <input type="checkbox" class="gluten-freeCheckbox" name="gluten-free">gluten-free</div>
+                <div> <input type="checkbox" class="vegetarianCheckbox" name="vegetarian">vegetarian </div>
+            </div>
+
+            <div id="choices">
+                <div> <input type="checkbox" class="halalCheckbox" name="halal">halal</div>
+                <div> <input type="checkbox" class="peskatarianCheckbox" name="peskatarian">peskatarian </div>
+                <div> <input type="checkbox" class="lactoseintolerantCheckbox" name="lactose intolerant">lactose intolerant</div>
+                <div> <input type="checkbox" class="none" name="lactose intolerant">none</div>
+            </div>
+        </div>
+
+        <p id="question">HOW MUCH ARE YOU WILLING TO SPEND ON GROCERIES?</p>
+        <div class="slidecontainer">
+                <input type="range" min="0" max="100" value="50" class="slider" id="moneySlider">
+                <p> <span id="dollarSign">$$</span></p>
+        </div>
+        <br>
+        <p id="question">HOW MANY SERVINGS DO YOU NEED PER MEAL?</p>
+        <div class="slidecontainer">
+                <input type="range" min="1" max="9" value="5" class="slider" id="servingSlider">
+                <p> <span id="servingSize">5</span></p>
+        </div>
+        <br>
+        <button id="proceedButton">
+           Start Using Meal Mate
+        </button>
+
+    </body>
+
+</html>
