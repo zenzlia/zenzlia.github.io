@@ -17,6 +17,20 @@ html, body {
 	margin: 0;
 }
 
+div {
+	/*145vw for Mobile, 50vw for Desktop*/
+	min-height: 100%;
+	width: 100%;
+	margin:0;
+	background-color: white;
+}
+
+h1 {
+	padding:20px;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom:-20px;
+}
+
 
 #navbar li{
 	margin-top:3%;
@@ -33,11 +47,14 @@ html, body {
 }
 
 #about {
-	background-color: #cdf6fa;
+	background-color:#d9e7ff;
+	font-family: Montserrat;
+	min-height: 50%;
 }
 
 #aboutMe {
-	padding:20px;
+	padding:2vw;
+	font-size: 1.5rem;
 }
 
 #slideshow {
@@ -61,18 +78,29 @@ html, body {
 	margin-bottom:2vh;
 }
 
+.parallax {
+	/* The image used */
+	background-image: url("images/UQimage1.jpg");
+  
+	/* Set a specific height */
+	min-height: 100px; 
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 30px;
+}
+
 /*
 PLAIN ITEMS
 */
-
-div {
-	/*145vw for Mobile, 50vw for Desktop*/
-	min-height: 100%;
-	width: 100%;
-	margin:0;
-	/* background-color: blueviolet; */
-}
-
 
 
 a { 
