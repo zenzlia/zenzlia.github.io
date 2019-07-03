@@ -31,9 +31,22 @@ h1 {
 	margin-bottom:-20px;
 }
 
+p {
+	font-family: Montserrat;
+	background-size: cover;
+	box-sizing: border-box;
+	background-position: center;
+	padding-left:4vw;
+	padding-right:4vw;
+	font-size: 1.5rem;
+}
 
 #navbar li{
 	margin-top:3%;
+}
+
+#projectsLink {
+	color: blue;
 }
 
 #navbar {
@@ -46,15 +59,16 @@ h1 {
 	min-height:100%;
 }
 
+#qualitifcations {
+	list-style: square;
+}
+
 #about {
 	background-color:#d9e7ff;
 	font-family: Montserrat;
 	min-height: 50%;
-}
-
-#aboutMe {
-	padding:2vw;
-	font-size: 1.5rem;
+	height: 900px;
+	padding: 50px 20px;
 }
 
 #slideshow {
@@ -67,7 +81,8 @@ h1 {
 	top: 20px; 
 	right: 0px; 
 	padding-right: 50px;
-	width:2.5%;
+	width:3%;
+	z-index: 2;
 }
 
 #logo {
