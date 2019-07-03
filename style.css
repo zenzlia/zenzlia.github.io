@@ -10,6 +10,7 @@
 
 body {
 	font-family: Helvetica, sans-serif;
+	width:100%;
 }
 
 html, body {
@@ -19,10 +20,11 @@ html, body {
 
 div {
 	/*145vw for Mobile, 50vw for Desktop*/
-	min-height: 100%;
+	min-height: 105%;
 	width: 100%;
 	margin:0;
-	background-color: white;
+	margin-top:-25px;
+	margin-bottom:-25px;
 }
 
 h1 {
@@ -59,6 +61,11 @@ p {
 	min-height:100%;
 }
 
+#qualificationSection {
+	margin-left:4vw;
+	font-size: 1.5rem;
+}
+
 #qualitifcations {
 	list-style: square;
 }
@@ -67,14 +74,9 @@ p {
 	background-color:#d9e7ff;
 	font-family: Montserrat;
 	min-height: 50%;
-	height: 900px;
-	padding: 50px 20px;
+	height: 850px;
 }
 
-#slideshow {
-	height:120px;
-	text-align: center
-}
 
 #upButton {
 	position:fixed;
@@ -89,7 +91,7 @@ p {
 	max-width: 10vw;
     height: auto;
 	width: auto\9; /* ie8 */
-	margin-top:2vh;
+	margin-top:6vh;
 	margin-bottom:2vh;
 }
 
