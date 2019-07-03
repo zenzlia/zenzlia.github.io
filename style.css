@@ -7,19 +7,29 @@
 	font-style: normal;
 }
 
+
+body {
+	font-family: Helvetica, sans-serif;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+
 #navbar li{
-	padding-right:5px;
-	display: flex;
+	margin-top:3%;
 }
 
 #navbar {
 	font-family: BebasNeue;
+	width:20%;
+	margin:auto;
 	font-size: 4vw;
 	list-style: none;
 	text-align: center;
-	padding-top: -30px;
-	width:20%;
-	margin:auto;
+	min-height:100%;
 }
 
 #about {
@@ -44,27 +54,22 @@
 }
 
 #logo {
-	max-width: 100%;
+	max-width: 10vw;
     height: auto;
-    width: auto\9; /* ie8 */
+	width: auto\9; /* ie8 */
+	margin-top:2vh;
+	margin-bottom:2vh;
 }
 
 /*
 PLAIN ITEMS
 */
 
-body {
-	font-family: Helvetica, sans-serif;
-}
-
-div:last-of-type {
-	margin-bottom: 100px;
-}
-
 div {
 	/*145vw for Mobile, 50vw for Desktop*/
-	height: 50vw;
+	min-height: 100%;
 	width: 100%;
+	margin:0;
 	/* background-color: blueviolet; */
 }
 
