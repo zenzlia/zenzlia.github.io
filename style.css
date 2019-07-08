@@ -7,7 +7,6 @@
 	font-style: normal;
 }
 
-
 body {
 	width:100%;
 }
@@ -19,7 +18,7 @@ html, body {
 
 div {
 	/*145vw for Mobile, 50vw for Desktop*/
-	min-height: 105%;
+	min-height: 110%;
 	width: 100%;
 	margin:0;
 	margin-top:-22px;
@@ -47,10 +46,6 @@ p {
 	margin-top:3%;
 }
 
-.logo {
-	border-radius: 10%;
-}
-
 #projectsLink {
 	color: blue;
 }
@@ -71,7 +66,7 @@ p {
 }
 
 #about {
-	background-color:rgba(175, 211, 255, 1);
+	background-color:#AFD3FF;
 	font-family: 'Roboto', sans-serif;
 	min-height: 100%;
 }
@@ -87,11 +82,15 @@ p {
 #qualifications {
 	list-style: none;
 	display: flex;
+	justify-content: center;
+	text-align: center;
 }
 
 #qualifications li img {
 	width: 10vw;
 	height: 10vw;
+	border-radius: 10%;
+	border: solid #abc2de 2px;
 }
 
 #upButton {
@@ -113,9 +112,10 @@ p {
 
 .parallax {
 	/* The image used */
-	background-image: url("images/UQimage1.jpg");
-  
+	/* background-image: url("images/UQimage1.jpg");
+   */
 	/* Set a specific height */
+	background-color: #FFF7CC;
 	min-height: 150px; 
   
 	/* Create the parallax scrolling effect */
@@ -123,12 +123,6 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.sticky {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 30px;
 }
 
 /*
