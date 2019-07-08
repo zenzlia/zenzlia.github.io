@@ -93,6 +93,22 @@ p {
 	border: solid #abc2de 2px;
 }
 
+#projects {
+	background-color:#AEE8B8;
+}
+
+#gallery {
+	background-color:#FFF7CC;
+}
+
+#commissions {
+	background-color:#E8BFFF;
+}
+
+#contact {
+	background-color:#E8BCAE;
+}
+
 #upButton {
 	position:fixed;
 	top: 20px; 
