@@ -93,18 +93,18 @@ h3 {
 	#starters img, #counterpicks img {
 		width:350px;
 		height:175px;
-		margin: 5px;
+		margin: 2px;
 	}
 
 	h1,h2{
-		font-size: 55px;
+		font-size: 50px;
 		text-align: center;
 		margin: 0 auto;
 		text-align: center;
 	}
 
 	h3{
-		font-size: 40px;
+		font-size: 35px;
 		text-align: center;
 		margin:10px;
 	}
@@ -149,6 +149,19 @@ h3 {
 	}
 
 }
+
+
+@media only screen and (min-width: 320px) {	
+	body {
+		background-image:url("images/phoneBackground.jpg");
+		background-repeat:repeat;
+		background-size: auto;
+	}
+	
+}
+
+
+
 
 
 

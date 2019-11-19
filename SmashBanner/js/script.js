@@ -11,6 +11,14 @@ $(document).ready(function(){
     var backButton = document.getElementById("backButton");
     var mobileView = window.matchMedia("(max-width: 700px)");
 
+    var iphone5 = window.matchMedia("(min-width: 320px)");
+
+    if (iphone5.matches) {
+        while(1) {
+            alert("Sorry Chris you're can't use this website");
+        }
+    }
+
     $("#game1Switch").click(function(event) {
         gameSwitch.remove();
         document.getElementById("counterpicks").remove();
