@@ -2,6 +2,13 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+#title {
+	font-size: 10vw;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #000000;
+}
+
 .logo {
 	display: block;
 	margin-left: auto;
