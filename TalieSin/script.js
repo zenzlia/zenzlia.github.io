@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var originalDate = new Date("12/4/2019");  
+    var originalDate = new Date("12/9/2019");  
     var today = new Date();
 
     var Difference_In_Time = today.getTime() - originalDate.getTime(); 
