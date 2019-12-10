@@ -2,8 +2,9 @@ $(document).ready(function(){
 
     //get inputted value that was stored from previous page and execute a query to get a list
     // FNS = [0,1,3] && [0,1,1,2]
+    // TNF = [0,0,1,1,1,2]
     var stageList = [];
-    var banOrder = [0,1,1,2];
+    var banOrder = [0,0,1,1,1,2];
     var bansFinished = false;
     var iterator = 0;
 
@@ -14,14 +15,14 @@ $(document).ready(function(){
 
     if (iphone5.matches) {
         while(1) {
-            alert("Sorry Chris you're can't use this website");
+            alert("Sorry Chris you can't use this website");
         }
     } 
 
     $("#game1Switch").click(function(event) {
         gameSwitch.remove();
         document.getElementById("counterpicks").remove();
-        banOrder = [0,1,3];
+        banOrder = [0,0,3];
         // $("#starters img").css({"height": "300px","width":"600px","margin":"5px"});
         changeText();
         document.getElementById("choosingPlayer").innerHTML = "Winner is Striking";

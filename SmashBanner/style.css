@@ -59,6 +59,10 @@ h2 {
 	-moz-box-sizing: border-box;
 } 
 
+#choosingPlayer {
+	margin-top: 20px;
+}
+
 h3 {
 	font-size: 80px;
 	font-family: 'Staatliches', cursive;
