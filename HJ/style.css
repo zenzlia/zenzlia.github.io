@@ -1,0 +1,34 @@
+@font-face {
+    font-family: HJ;
+    src: url("Block\ Berthold\ Condensed\ Regular.otf");
+  }
+
+#small {
+    background-color: #D60000;
+    color: #D60000;
+    width: 130%;
+    font-size: 10vw;
+    position: absolute;
+    visibility: hidden;
+}
+
+body {
+    background-color: #D60000;
+}
+
+#countdown {
+    font-family: HJ;
+    font-size: 15vw;
+    color: white;
+    background-color: #D60000;
+    position: absolute;
+    width:100%;
+    text-align: center;
+    margin-top:360px;
+    margin-left:120px;
+}
+
+#lol {
+    width:100%;
+    font-size: 5vw;
+}
