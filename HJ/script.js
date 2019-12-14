@@ -14,7 +14,7 @@ function readURL(input) {
 }
 
 $(document).ready(function(){
-    document.body.requestFullscreen();
+    // document.body.requestFullscreen();
     var countdown = 30 * 60 * 1000;
     var timerId = setInterval(function(){
     countdown -= 1000;
