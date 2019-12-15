@@ -53,7 +53,7 @@ $(document).ready(function() {
     $("#submit" ).mousedown(function() {
         counter = 1;
         tierNum = -1;
-        reason = "Sorry, we couldn't find you, this either means your Mkleo number is too high or you're have no registered games on ausmash.com.au"
+        reason = "Sorry, we couldn't find you, this either means your Mkleo number is too high or you have no registered games on ausmash.com.au"
         var tag = $("#smashTag")[0]["value"];
         // Do the parsing here, switch case it bitch
 
