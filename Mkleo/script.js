@@ -63,7 +63,7 @@ $(document).ready(function() {
             $("h1")[0].innerHTML = reason;
             $("#results")[0].innerHTML = "Please try again!";
         } else {
-            $("h1")[0].innerHTML = "Congrates " + tag + ", your tier is " + tierNum + " and your Mkleo number is " + parseInt(tierNum + 2);
+            $("h1")[0].innerHTML = "Congrats " + tag + ", your tier is " + tierNum + " and your Mkleo number is " + parseInt(tierNum + 2);
             $("#results")[0].innerHTML = "This means that you have " + reason;
         }        
     });
