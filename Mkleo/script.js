@@ -1,5 +1,5 @@
 var tierNum = -1
-var reason = "Sorry, we couldn't find you, this either means your Mkleo number is too high or you're have no registered games on ausmash.com.au"
+var reason = "Sorry, we couldn't find you, this either means your Mkleo number is too high or you have no registered games on ausmash.com.au"
 
 var counter = 1;
 
