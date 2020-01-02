@@ -28,7 +28,7 @@ var bigJohns = [
     "Ken deserves nothing",
     "I played my secondary",
     "My character can't kill",
-    "My opponent shit himself (2017)",
+    "My opponent shit himself (2015)",
     "Seed 1 rigged the bracket",
     "shadrew",
     "gamer boy BO 2 stronk",
