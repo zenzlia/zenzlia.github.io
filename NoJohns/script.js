@@ -16,7 +16,16 @@ var bigJohns = [
     "P9 popped off on an SD and disrupted my train of thought",
     "Epstein didn't kill himself",
     "I couldn't stop thinking about how the GC discord is locked",
-    "I thought I was on the GC hazards were ON"
+    "I thought I was on the GC and hazards were ON",
+    "My MKLEO number is too low",
+    "Your character is a +1000 on mine",
+    "Game bad",
+    "I gave you a homie stock but didn't realise it was the last one",
+    "My brain died thinking about Mint2 complaining about Mewtwo's tailhurtbox",
+    "I couldn't get the image of Ben Gold kissing ESAM out of my head",
+    "Someone texted me",
+    "The knockback wasn't set on 1.0",
+    "Ken deserves nothing"
 ];
 
 $(document).ready(function() {
