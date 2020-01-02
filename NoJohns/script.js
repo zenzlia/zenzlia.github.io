@@ -25,12 +25,19 @@ var bigJohns = [
     "I couldn't get the image of Ben Gold kissing ESAM out of my head",
     "Someone texted me",
     "The knockback wasn't set on 1.0",
-    "Ken deserves nothing"
+    "Ken deserves nothing",
+    "I played my secondary",
+    "My character can't kill",
+    "My opponent shit himself (2017)",
+    "Seed 1 rigged the bracket",
+    "shadrew",
+    "gamer boy BO 2 stronk",
+    "siqniq decided to try again"
 ];
 
 $(document).ready(function() {
     $("button").mousedown(function() {
         var r = Math.floor(Math.random() * bigJohns.length);
-        $("#john")[0].innerHTML = bigJohns[r]
+        $("#john")[0].innerHTML = bigJohns[r];
     });
 });
