@@ -1,8 +1,12 @@
+function change_ruleset() {
+    // FNS = [0,1,3] && [0,1,1,2]
+    // TNF = [0,0,1,1,1,2]
+}
+
 $(document).ready(function(){
 
     //get inputted value that was stored from previous page and execute a query to get a list
-    // FNS = [0,1,3] && [0,1,1,2]
-    // TNF = [0,0,1,1,1,2]
+    
     var stageList = [];
     var banOrder = [0,0,1,1,1,2];
     var bansFinished = false;
@@ -12,12 +16,6 @@ $(document).ready(function(){
     var backButton = document.getElementById("backButton");
     var mobileView = window.matchMedia("(max-width: 700px)");
     var iphone5 = window.matchMedia("(max-width: 320px)");
-
-    if (iphone5.matches) {
-        while(1) {
-            alert("Sorry Chris you can't use this website");
-        }
-    } 
 
     $("#game1Switch").click(function(event) {
         gameSwitch.remove();
