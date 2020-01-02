@@ -32,7 +32,10 @@ var bigJohns = [
     "Seed 1 rigged the bracket",
     "shadrew",
     "gamer boy BO 2 stronk",
-    "siqniq decided to try again"
+    "siqniq decided to try again",
+    "TO gave me a 5 Ness run",
+    "A viewer stood behind me for 10 minutes",
+    "Only lost because I thought it would be funny"
 ];
 
 $(document).ready(function() {
