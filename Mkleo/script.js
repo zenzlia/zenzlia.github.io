@@ -31,7 +31,7 @@ function getReason() {
             reason = "beaten " +  defeatOrder[0] +  " who has beaten " +  defeatOrder[1] + " who has beaten Ben Gold who has beaten Kameme who has beaten Mkleo";
             break;
         case 4:
-            reason = "beaten someone who has beaten someone who has beaten someone who has beaten Ben Gold who has beaten Kameme who has beaten Mkleo"
+            reason = "beaten " + defeatOrder[0] + " who has beaten " + defeatOrder[1] + " who has beaten " + defeatOrder[2] + " who has beaten Ben Gold who has beaten Kameme who has beaten Mkleo"
     }
 }
 
