@@ -72,6 +72,19 @@ function setDefaults() {
     }
 }
 
+$(window).bind('beforeunload',function(){
+    localStorage.setItem("TOTAL", TOTAL_PRET);
+    localStorage.setItem("MOD", PRET_MOD);
+    localStorage.setItem("RATE", RATE);
+});
+
+//Save before exiting
+window.onbeforeunload = function() {
+    localStorage.setItem("TOTAL", TOTAL_PRET);
+    localStorage.setItem("MOD", PRET_MOD);
+    localStorage.setItem("RATE", RATE);
+};
+
 $(document).ready(function() {
 
     setDefaults();
@@ -83,19 +96,6 @@ $(document).ready(function() {
         pressedButton.attr('src', ICON);
         $("#amount")[0].innerHTML = TOTAL_PRET;
 
-    });
-    
-    //Save before exiting
-    window.onbeforeunload = function() {
-        localStorage.setItem("TOTAL", TOTAL_PRET);
-        localStorage.setItem("MOD", PRET_MOD);
-        localStorage.setItem("RATE", RATE);
-    };
-
-    $(window).bind('beforeunload',function(){
-        localStorage.setItem("TOTAL", TOTAL_PRET);
-        localStorage.setItem("MOD", PRET_MOD);
-        localStorage.setItem("RATE", RATE);
     });
 
     $("li").click(function(event) {
