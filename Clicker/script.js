@@ -1,4 +1,4 @@
-let TOTAL_PRET, PRET_MOD, RATE;
+var TOTAL_PRET, PRET_MOD, RATE;
 
 let ICON = 'click.png';
 let ICON_DOWN = 'based.png';
@@ -46,19 +46,26 @@ function change_pret(type) {
 }
 
 $(document).ready(function() {
-    TOTAL_PRET = parseInt(localStorage.getItem("TOTAL"));
+    TOTAL_PRET = localStorage.getItem("TOTAL");
+    
     if (TOTAL_PRET == null) {
         TOTAL_PRET = 0;
+    } else {
+        TOTAL_PRET = parseInt(TOTAL_PRET);
     }
     
-    PRET_MOD = parseInt(localStorage.getItem("MOD"));
+    PRET_MOD = localStorage.getItem("MOD");
     if (PRET_MOD == null) {
         PRET_MOD = 1;
+    } else {
+        PRET_MOD = parseInt(PRET_MOD);
     }
 
-    RATE = parseInt(localStorage.getItem("RATE"));
+    RATE = localStorage.getItem("RATE");
     if (RATE == null) {
         RATE = 1000;
+    } else {
+        RATE = parseInt(RATE);
     }
 
     startInterval(RATE);
