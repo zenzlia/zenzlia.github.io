@@ -11,9 +11,9 @@ function disable(clicked) {
     $(clicked).removeClass("purchase");
 }
 
-function change_values(mod, newRate) {
-    if (mod > PRET_MOD) {
-        PRET_MOD = mod;
+function change_values(newMod, newRate) {
+    if (newMod > PRET_MOD) {
+        PRET_MOD = newMod;
     }
 
     if (newRate < RATE) {
@@ -22,7 +22,6 @@ function change_values(mod, newRate) {
 }
 
 function change_pret(type) {
-    console.log(type);
     switch (type) {
         case "big":
             change_values(10, RATE);
@@ -48,7 +47,8 @@ function change_pret(type) {
     startInterval(RATE);
 }
 
-$(document).ready(function() {
+// Set default values for every value
+function setDefaults() {
     TOTAL_PRET = localStorage.getItem("TOTAL");
     
     if (TOTAL_PRET == null || TOTAL_PRET == "NaN") {
@@ -70,7 +70,11 @@ $(document).ready(function() {
     } else {
         RATE = parseInt(RATE);
     }
+}
 
+$(document).ready(function() {
+
+    setDefaults();
     startInterval(RATE);
 
     $("#pret").click(function(event) {
@@ -92,7 +96,7 @@ $(document).ready(function() {
         var amount;
         if (clicked[0].id == "amount") {
             amount = parseInt(clicked[0].innerHTML);
-
+            console.log
             clicked = clicked.parents();
         } else {
             amount = parseInt(clicked[0]["childNodes"][1].innerHTML);
