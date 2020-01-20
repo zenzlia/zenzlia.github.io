@@ -35,7 +35,13 @@ var bigJohns = [
     "siqniq decided to try again",
     "TO gave me a 5 Ness run",
     "A viewer stood behind me for 10 minutes",
-    "Only lost because I thought it would be funny"
+    "Only lost because I thought it would be funny",
+    "I lost because spazzy screamed PWAH",
+    "They were from another state",
+    "My last opponent DQed and I'm still upset about it",
+    "The chair next to me got taken and it distracted me",
+    "Someone hit the projector and it scared me!",
+    "It's my first day with the character"
 ];
 
 $(document).ready(function() {
