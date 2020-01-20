@@ -22,6 +22,7 @@ function change_values(mod, newRate) {
 }
 
 function change_pret(type) {
+    console.log(type);
     switch (type) {
         case "big":
             change_values(10, RATE);
@@ -37,6 +38,8 @@ function change_pret(type) {
             break;
         case "uwu":
             change_values(150, 50);
+            ICON_DOWN = "uwu.png";
+            ICON = "owo.png";
             break;
 
     }
@@ -48,26 +51,27 @@ function change_pret(type) {
 $(document).ready(function() {
     TOTAL_PRET = localStorage.getItem("TOTAL");
     
-    if (TOTAL_PRET == null) {
+    if (TOTAL_PRET == null || TOTAL_PRET == "NaN") {
         TOTAL_PRET = 0;
     } else {
         TOTAL_PRET = parseInt(TOTAL_PRET);
     }
     
     PRET_MOD = localStorage.getItem("MOD");
-    if (PRET_MOD == null) {
+    if (PRET_MOD == null || PRET_MOD == 'NaN') {
         PRET_MOD = 1;
     } else {
         PRET_MOD = parseInt(PRET_MOD);
     }
 
     RATE = localStorage.getItem("RATE");
-    if (RATE == null) {
+    if (RATE == null || RATE == 'NaN') {
         RATE = 1000;
     } else {
         RATE = parseInt(RATE);
     }
 
+    TOTAL_PRET = 100000;
     startInterval(RATE);
 
     $("#pret").click(function(event) {
@@ -84,12 +88,13 @@ $(document).ready(function() {
         localStorage.setItem("MOD", PRET_MOD);
         localStorage.setItem("RATE", RATE);
     };
-    $("li, #amount").click(function(event) {
+    $("li").click(function(event) {
         var clicked = $(event.target);
         var amount;
         if (clicked[0].id == "amount") {
-            amount = parseInt(clicked[0].id);
-            clicked = clicked.parents()[0];
+            amount = parseInt(clicked[0].innerHTML);
+
+            clicked = clicked.parents();
         } else {
             amount = parseInt(clicked[0]["childNodes"][1].innerHTML);
         }
@@ -99,7 +104,7 @@ $(document).ready(function() {
             $("#amount")[0].innerHTML = TOTAL_PRET;
             change_pret(clicked[0]["id"]);
             disable(clicked);
-        }
+        } 
     });
 });
 
