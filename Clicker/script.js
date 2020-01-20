@@ -91,6 +91,13 @@ $(document).ready(function() {
         localStorage.setItem("MOD", PRET_MOD);
         localStorage.setItem("RATE", RATE);
     };
+
+    $(window).bind('beforeunload',function(){
+        localStorage.setItem("TOTAL", TOTAL_PRET);
+        localStorage.setItem("MOD", PRET_MOD);
+        localStorage.setItem("RATE", RATE);
+    });
+
     $("li").click(function(event) {
         var clicked = $(event.target);
         var amount;
