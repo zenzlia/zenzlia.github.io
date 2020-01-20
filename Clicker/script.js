@@ -71,7 +71,6 @@ $(document).ready(function() {
         RATE = parseInt(RATE);
     }
 
-    TOTAL_PRET = 100000;
     startInterval(RATE);
 
     $("#pret").click(function(event) {
