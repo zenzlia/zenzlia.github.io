@@ -72,12 +72,6 @@ function setDefaults() {
     }
 }
 
-$(window).bind('beforeunload',function(){
-    localStorage.setItem("TOTAL", TOTAL_PRET);
-    localStorage.setItem("MOD", PRET_MOD);
-    localStorage.setItem("RATE", RATE);
-});
-
 //Save before exiting
 window.onbeforeunload = function() {
     localStorage.setItem("TOTAL", TOTAL_PRET);
@@ -123,6 +117,9 @@ function startInterval(RATE) {
     intervalId = setInterval(function(){
         TOTAL_PRET += 1;
         $("#amount")[0].innerHTML = TOTAL_PRET;
+        localStorage.setItem("TOTAL", TOTAL_PRET);
+        localStorage.setItem("MOD", PRET_MOD);
+        localStorage.setItem("RATE", RATE);
     }, RATE);
   }
 
