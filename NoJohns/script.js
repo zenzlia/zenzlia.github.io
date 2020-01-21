@@ -36,12 +36,22 @@ var bigJohns = [
     "TO gave me a 5 Ness run",
     "A viewer stood behind me for 10 minutes",
     "Only lost because I thought it would be funny",
-    "I lost because spazzy screamed PWAH",
+    "I lost because the crowd kept screaming PWAH",
     "They were from another state",
     "My last opponent DQed and I'm still upset about it",
     "The chair next to me got taken and it distracted me",
     "Someone hit the projector and it scared me!",
-    "It's my first day with the character"
+    "It's my first day with the character",
+    "This setup is laggy",
+    "I'm upset that the crowd popped off on my SD".
+    "I lost because the bar was open",
+    "I was losing for the next arcadian",
+    "Someone grabbed a chair that was next to me during my set and disconnected the stream",
+    "I lost because I wasn't drunk enough",
+    "I lost because Kenny bet on it",
+    "My opponent's head bopping was distracting",
+    "I lost because my opponent (milis cara, the dedede player from Queensland of piss gang fame) is simply too sexy and it was distracting",
+    "I lost because the crowd kept going 'ayyy' when I got hit by nair"
 ];
 
 $(document).ready(function() {
