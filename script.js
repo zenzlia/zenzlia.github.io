@@ -12,5 +12,6 @@ $(document).ready(function() {
     $("a").click(function(event) {
         localStorage.setItem("k", $(event.target)[0].innerText);
         $('#' + data[localStorage.getItem("k")]).css('visibility', 'visible');
+        
     });
 });

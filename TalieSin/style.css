@@ -1,0 +1,22 @@
+* {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10vw;
+    text-align: center;
+}
+
+body {
+    text-transform: capitalize;
+    background-image:url("lol_I\'m_lazy.jpg");
+    background-repeat: repeat;
+	background-size: 100%;
+}
+
+#days {
+    text-align: left;
+    margin-left: 18vw;
+    margin-top: 82vw;
+    font-size: 20vw;
+}
+
+
+
