@@ -52,7 +52,7 @@ var bigJohns = [
     "My opponent's head bopping was distracting",
     "I lost because my opponent (milis cara, the dedede player from Queensland of piss gang fame) is simply too sexy and it was distracting",
     "I lost because the crowd kept going 'ayyy' when I got hit by nair",
-    "I lose because I was playing rivals for the last 10 minutes - squidfish 2020"
+    "I lose because I was playing rivals for the last 10 minutes - squidfist 2020"
 ];
 
 $(document).ready(function() {
