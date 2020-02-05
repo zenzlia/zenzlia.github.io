@@ -8,18 +8,28 @@
         
         <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 
-        <script type="text/javascript" src="mapdata.js"></script>
-        <script type="text/javascript" src="australiamap.js"></script>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="data.js"></script>
         <script type="text/javascript" src="script.js"></script>
         
         <meta meta name="viewport" content="width=device-width" /> 
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
+    <!-- STATE_CHARACTERS = {"QLD":{}, "VIC":{}, "TAS":{}, "WA":{}, "NT":{}, "NZ":{}, "SA":{}, "ACT":{}, "NSW":{}} -->
     <body>
-        <div id='map'></div>
-        <div id='chart'></div>
-        <div class='uwu'>abc</div>
+        <ul id="states">
+            <li>QLD</li>
+            <li>NSW</li>  
+            <li>VIC</li>    
+            <li>TAS</li>
+            <li>WA</li>
+            <li>SA</li>
+            <li>ACT</li>
+            <li>NZ</li>
+        </ul>
+
+        <ul id='most_played'> </ul>
+        <ol id='most_active_players'> </ol>
     </body>
 </html>
 
