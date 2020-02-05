@@ -1,0 +1,22 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	/* width: 100%; */
+}
+
+#map_holder text{
+	opacity: 0;
+	visibility: hidden;
+}
+
+body {
+	display: flex;
+}
+
+#piechart {
+	height: 100%;
+}
+
+text {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1vw;
+}
