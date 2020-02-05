@@ -60,7 +60,7 @@ $(document).ready(function() {
     });
 
     $("#most_played").click(function(event) { 
-        $("#most_active_players")[0].innerHTML = '';
+        $("#most_active_players")[0].innerHTML = 'Most active players';
         var elem = $(event.target)[0];
         var character = $(elem).attr('id');
         var players = STATE_CHARACTERS[current_state][character];
