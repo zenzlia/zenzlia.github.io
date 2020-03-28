@@ -103,7 +103,7 @@ def get_name_tiers(tier_list, dic_to_append):
 
 
 def print_data(data, data_name):
-    f = open("{}.txt".format(data_name),"w+")
+    f = open("{}.txt".format(data_name), "w+")
     f.write("var {} = ".format(data_name))
     f.write("{")
     for id, player in data.items():
@@ -112,6 +112,18 @@ def print_data(data, data_name):
     f.write("}\n")
     f.write("{} = {}".format(data_name, data))
     f.close() 
+
+def print_all_data(data_list):
+    f = open("data.js", "w+")
+
+    for data in data_list:
+            for id, player in data.items():
+                f.write("'{}':'{}',".format(player[0], player[1]))
+
+            f.write("}\n")
+    f.close()
+
+
 
 def get_data():
     get_first_tiers()
@@ -132,3 +144,5 @@ def get_data():
 
 
 get_data()
+data_list = [first_tier, second_tier, third_tier, fourth_tier]
+print_all_data(data_list)

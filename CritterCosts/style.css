@@ -1,0 +1,43 @@
+@font-face {
+    font-family: animalCrossing;
+    src: url(FinkHeavy.woff) format('truetype')
+}
+
+* {
+    text-align: center;
+    font-family: animalCrossing;
+}
+
+
+
+body {
+    margin-top:10vw;
+    background-color: grey;
+    background-image: url("leaf.png");
+    background-size: 100px;
+    background-blend-mode: overlay;
+    height: 100%;
+    width: 100%;
+}
+
+#myInput {
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    font-size: 10vw;
+    border-radius: 30px;
+}
+
+.result {
+    background-color: #a9863e;
+    border-radius: 30px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 15px;
+    height: 80%;
+    text-align: center;
+    color:#ffc932;
+    font-size: 5em;
+}
+
