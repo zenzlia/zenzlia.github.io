@@ -4,6 +4,10 @@ function titleCase(str) {
     }).join(' ');
 }
 
+function capitalizeFLetter(string) { 
+    return string[0].toUpperCase() + string.slice(1); 
+} 
+
 function searchData() {
     // Declare variables
     var input, filter;
@@ -15,8 +19,19 @@ function searchData() {
         $("#resultName")[0].innerHTML = "Critter Name";
         $("#resultAmount")[0].innerHTML = "Critter Price";
         return;
-    } else {
-        console.log(filter);
+    } else if (filter == "SALMON") {
+        $("#resultName")[0].innerHTML = titleCase(filter);
+        var index = fishNames.indexOf(capitalizeFLetter(input.value));
+
+        $("#resultAmount")[0].innerHTML = fishValues[index];
+        return;
+    } else if (filter == "CRICKET"){ 
+            
+        $("#resultName")[0].innerHTML = titleCase(filter);
+        var index = bugNames.indexOf(capitalizeFLetter(input.value));
+
+        $("#resultAmount")[0].innerHTML = bugValues[index];
+        return;
     }
     for (i = 0; i < bugNames.length; i++) {
         if (bugNames[i].toUpperCase().indexOf(filter) > -1) {
