@@ -25,7 +25,7 @@ function searchData() {
 
         $("#resultAmount")[0].innerHTML = fishValues[index];
         return;
-    } else if (filter == "CRICKET"){ 
+    } else if (filter == "CRICKET" || filter == "MANTIS"){ 
             
         $("#resultName")[0].innerHTML = titleCase(filter);
         var index = bugNames.indexOf(capitalizeFLetter(input.value));
