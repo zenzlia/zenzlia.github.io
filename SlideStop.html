@@ -62,8 +62,7 @@
 
 					var average = Math.floor(totalMinutes * 60/totalSlides);
 					$("#currentSlide").html("Current Slide: 1");
-					console.log(average)
-					if (!isNaN(average) && !isNaN(totalMinutes)) {
+					if (!isNaN(average) && totalMinutes != "") {
 						$("#start").remove();
 						$("#numSlides").remove();
 						$("#numSlidesLabel").remove();
