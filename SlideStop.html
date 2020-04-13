@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	    <meta charset="utf-8" />
+		<title>Slide Stop</title>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
+		<meta meta name="viewport" content="width=device-width" /> 
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<style>
+			* {
+				font-family: Roboto;
+				text-align: center;
+				font-size: 5vh;
+			}
+			input {
+				font-size: 3vh;
+				text-align: left;
+			}
+		</style>
+
+		<script>
+			function countAverage(average, totalTime) {
+				var currentSlide = 2;
+				var count = 0, time = 0, timer = setInterval(function() {
+					$("#counter").html(average - count++);
+					time++;
+					console.log(time);
+					// End counter
+					if(time == totalTime) {
+						$("#counter").html(0);
+						clearInterval(timer);
+						console.log("BYE!")
+						return;
+					} 
+					
+					if (count == average) {
+						count = 0;
+						$("#currentSlide").html("Current Slide: " + currentSlide++);
+					}
+
+					if (time % 60 < 10) {
+						$("#totalCounter").html("Total Time: " + Math.round(time/60) + ":0" + time%60);
+					} else {
+						$("#totalCounter").html("Total Time: " + Math.floor(time/60) + ":" + time%60);
+					}
+					
+
+
+				}, 1000);
+				
+			}
+			$(document).ready(function() {
+				$("#start").click(function() {
+					
+					
+					var totalSlides = $("#numSlides").val();
+					var totalMinutes = $("#totalTime").val(); 
+
+
+
+					var average = Math.floor(totalMinutes * 60/totalSlides);
+					$("#currentSlide").html("Current Slide: 1");
+					console.log(average)
+					if (!isNaN(average) && !isNaN(totalMinutes)) {
+						$("#start").remove();
+						$("#numSlides").remove();
+						$("#numSlidesLabel").remove();
+						$("#totalTime").remove();
+						$("#totalTimeLabel").remove();
+						countAverage(average, totalMinutes * 60);
+					} 
+				});
+			});
+		</script>
+    </head>
+
+	<body>
+		<div id='counter'>0</div>
+		<button id='start'>Start</button>
+		<div id='currentSlide'>Current Slide: 1</div>
+		<div id='totalCounter'>Total Time: 0:00 </div>
+
+		<label id="numSlidesLabel" for="numSlides">Number of Slides</label>
+		<input id="numSlides"> </input>
+		<br>
+		<label id="totalTimeLabel" for="totalTime">Total Time (Minutes)</label>
+		<input id="totalTime"></input>
+    </body>
+		
+    </html>
